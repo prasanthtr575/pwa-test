@@ -6,10 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app';
+  title = 'PWA Test here';
 }
-
-
-// 1/SVLX80Wc3C1EVvXXVmXeqq35KTn9SiQ-aFTyjjCn2v2_jEDpptYSjfqODViuFTrZ
-
-// FIREBASE_TOKEN
