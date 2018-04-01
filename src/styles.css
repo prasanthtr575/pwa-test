@@ -1,1 +1,35 @@
 /* You can add global styles to this file, and also import other style files */
+
+body {
+    background: grey;
+}
+
+.spinner {
+    box-sizing: border-box;
+    border: solid .75em transparent;
+    background: url(https://images.nationalgeographic.com/wpf/media-live/photos/000/655/cache/zebra-river-serengeti_65530_990x742.jpg) 50%/cover padding-box;
+}
+
+.spinner,
+.spinner:before {
+    position: absolute;
+    margin: -8em;
+    width: 16em;
+    height: 16em;
+    top: 50%;
+    left: 50%;
+    border-radius: 50%;
+}
+
+.spinner:before {
+    z-index: -1;
+    background: conic-gradient(#ff9999, #ffcc99, #ffff99, #ccff99, #99ff99, #99ffcc, #99ffff, #99ccff, #9999ff, #cc99ff, #ff99ff, #ff99cc, #ff9999);
+    animation: r 2s linear infinite;
+    content: '';
+}
+
+@keyframes r {
+    to {
+        transform: rotate(1turn);
+    }
+}
